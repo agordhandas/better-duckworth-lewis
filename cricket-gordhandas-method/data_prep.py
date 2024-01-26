@@ -44,7 +44,8 @@ def parse_cricket_data(file_path):
         rows.append({
             'match_id': match_id,
             'over_number': over_number,
-            'cumulative_score': cumulative_score,
+            # 'cumulative_score': cumulative_score,
+            'cumulative_average_score': cumulative_score / (over_number+1),
             'runs_scored_in_over': runs_in_over,
             'cumulative_wickets_lost': cumulative_wickets,
             'wickets_lost_in_over': wickets_in_over,
